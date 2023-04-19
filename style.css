@@ -117,6 +117,7 @@ body{
     .nav{
         justify-content: center;
         padding: 3%;
+        gap: 15%;
     }
 
     .content{
