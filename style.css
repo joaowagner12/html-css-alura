@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Dongle:wght@300;700&display=swap');
+
+:root{
+    --first_color: #FDE2F3;
+    --second_color: #2A2F4F;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: var(--first_color);
+    color: var(--second_color);
+    box-sizing: border-box;
+    font-family: 'Dongle', sans-serif;
+}
+
+.nav{
+    background-color: var(--second_color);
+    font-size: 2rem;
+    font-weight: 700;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+    padding-left: 22%;
+    display: flex;
+    gap: 6%;
+}
+
+.link_header{
+    text-decoration: none;
+    color: var(--first_color);
+}
+
+.link_header:hover{
+    color: aquamarine;
+}
+
+.presentation{
+
+    align-items: center;
+    padding-left: 22%;
+    padding-right: 22%;
+    padding-bottom: 7.5%;
+    padding-top: 7.5%;
+    justify-content: space-between;
+    display: flex;
+    gap: 82px;
+}
+
+.content{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+}
+
+.title{
+    font-size: 3rem;
+}
+
+.paragraph{
+    font-size: 2.25rem;
+}
+
+.subtitle{
+    font-size: 2.5rem;
+}
+
+.links_flex{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 26px;
+    align-items: center;
+}
+
+.link{
+    color: var(--second_color);
+    width: 40%;
+    padding: 4px;
+    font-size: 1.75rem;
+    text-align: center;
+    border-radius: 12px;
+    border: 2px solid var(--second_color);
+    text-decoration: none;
+    font-weight: 700;
+    
+}
+
+.link:hover{
+    background-color: var(--second_color);
+    color: var(--first_color);
+}
+
+.image{
+    height: 50%;
+    width: 50%;
+}
+
+.footer{
+    font-weight: 700;
+    font-size: 1.75rem;
+    text-align: center;
+    color: var(--first_color);
+    padding: 12px;
+    background-color: var(--second_color);
+}
+
+@media (max-width:900px){
+    .presentation{
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+
+    .nav{
+        justify-content: center;
+        padding: 3%;
+    }
+
+    .content{
+        width: auto;
+    }
+}
